@@ -1,0 +1,1202 @@
+[
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Leaderboard",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Leaderboard",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Leaderboard",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Leaderboard",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Leaderboard",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Leaderboard",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Leaderboard",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Leaderboard",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Leaderboard",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Leaderboard",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Leaderboard",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Leaderboard",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Leaderboard",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Leaderboard",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Leaderboard",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Leaderboard",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Leaderboard",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Leaderboard",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Leaderboard",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Leaderboard",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Leaderboard",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Leaderboard",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Leaderboard",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Leaderboard",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Leaderboard",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Blueprint",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Blueprint",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Blueprint",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Blueprint",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Blueprint",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Blueprint",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Blueprint",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Blueprint",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Blueprint",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Blueprint",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Blueprint",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Blueprint",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Blueprint",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Blueprint",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Blueprint",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Blueprint",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Blueprint",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Blueprint",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Blueprint",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Blueprint",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Blueprint",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Blueprint",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Blueprint",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Blueprint",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Blueprint",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Transaction",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Transaction",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Transaction",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Transaction",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Transaction",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Transaction",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Transaction",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Transaction",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Transaction",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Transaction",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Transaction",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Transaction",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Transaction",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Transaction",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Transaction",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Transaction",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Transaction",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Transaction",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Transaction",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Transaction",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Transaction",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Transaction",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Transaction",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Transaction",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Transaction",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Admin",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Admin",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Admin",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Admin",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Admin",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Admin",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Admin",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Admin",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Admin",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Admin",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Admin",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Admin",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Admin",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Admin",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Admin",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Admin",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Admin",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Admin",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Admin",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Admin",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Admin",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Admin",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Admin",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Admin",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Admin",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Stake",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Stake",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Stake",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Stake",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Stake",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Stake",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Stake",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Stake",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Stake",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Stake",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Stake",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Stake",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Stake",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Stake",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Stake",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Stake",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Stake",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Stake",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Stake",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Stake",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Stake",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Stake",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Stake",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Stake",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Stake",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Notification",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Notification",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Notification",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Notification",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Notification",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Notification",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Notification",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Notification",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Notification",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Notification",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Notification",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Notification",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Notification",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Notification",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Notification",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Notification",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Notification",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Notification",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Notification",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Notification",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Notification",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "Notification",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "Notification",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Notification",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "Notification",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "AppUser",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "AppUser",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "AppUser",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "AppUser",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "AppUser",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "AppUser",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "AppUser",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "AppUser",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "AppUser",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "AppUser",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "AppUser",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "AppUser",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "AppUser",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "AppUser",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "AppUser",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "AppUser",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "AppUser",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "AppUser",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "AppUser",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "AppUser",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "AppUser",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amateurTrader",
+    "resource": "AppUser",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "guest",
+    "resource": "AppUser",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "AppUser",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "proTrader",
+    "resource": "AppUser",
+    "action": "read:any",
+    "attributes": "*"
+  }
+]

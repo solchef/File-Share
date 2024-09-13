@@ -1,0 +1,786 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Admin {
+  createdAt: DateTime!
+  id: String!
+  privileges: EnumAdminPrivileges
+  updatedAt: DateTime!
+  user: User
+}
+
+input AdminCreateInput {
+  privileges: EnumAdminPrivileges
+  user: UserWhereUniqueInput
+}
+
+input AdminCreateNestedManyWithoutUsersInput {
+  connect: [AdminWhereUniqueInput!]
+}
+
+input AdminListRelationFilter {
+  every: AdminWhereInput
+  none: AdminWhereInput
+  some: AdminWhereInput
+}
+
+input AdminOrderByInput {
+  createdAt: SortOrder
+  id: SortOrder
+  privileges: SortOrder
+  updatedAt: SortOrder
+  userId: SortOrder
+}
+
+input AdminUpdateInput {
+  privileges: EnumAdminPrivileges
+  user: UserWhereUniqueInput
+}
+
+input AdminUpdateManyWithoutUsersInput {
+  connect: [AdminWhereUniqueInput!]
+  disconnect: [AdminWhereUniqueInput!]
+  set: [AdminWhereUniqueInput!]
+}
+
+input AdminWhereInput {
+  id: StringFilter
+  privileges: EnumAdminPrivileges
+  user: UserWhereUniqueInput
+}
+
+input AdminWhereUniqueInput {
+  id: String!
+}
+
+type AppUser {
+  createdAt: DateTime!
+  email: String
+  id: String!
+  passwordHash: String
+  rank: Float
+  role: EnumAppUserRole
+  updatedAt: DateTime!
+  username: String
+  walletAddress: String
+}
+
+input AppUserCreateInput {
+  email: String
+  passwordHash: String
+  rank: Float
+  role: EnumAppUserRole
+  username: String
+  walletAddress: String
+}
+
+input AppUserOrderByInput {
+  createdAt: SortOrder
+  email: SortOrder
+  id: SortOrder
+  passwordHash: SortOrder
+  rank: SortOrder
+  role: SortOrder
+  updatedAt: SortOrder
+  username: SortOrder
+  walletAddress: SortOrder
+}
+
+input AppUserUpdateInput {
+  email: String
+  passwordHash: String
+  rank: Float
+  role: EnumAppUserRole
+  username: String
+  walletAddress: String
+}
+
+input AppUserWhereInput {
+  email: StringNullableFilter
+  id: StringFilter
+  passwordHash: StringNullableFilter
+  rank: IntNullableFilter
+  role: EnumAppUserRole
+  username: StringNullableFilter
+  walletAddress: StringNullableFilter
+}
+
+input AppUserWhereUniqueInput {
+  id: String!
+}
+
+type Blueprint {
+  aiData: JSON
+  buyPair: String
+  createdAt: DateTime!
+  description: String
+  exchange: String
+  expiry: String
+  id: String!
+  maxOrder: String
+  minOrder: String
+  name: String
+  sellPair: String
+  stake: String
+  stakeAmount: Float
+  stakes(orderBy: [StakeOrderByInput!], skip: Float, take: Float, where: StakeWhereInput): [Stake!]!
+  stopLoss: String
+  successRate: Float
+  takeProfit: String
+  tradeType: String
+  transactions(orderBy: [TransactionOrderByInput!], skip: Float, take: Float, where: TransactionWhereInput): [Transaction!]!
+  updatedAt: DateTime!
+  user: User
+}
+
+input BlueprintCreateInput {
+  aiData: JSON
+  buyPair: String
+  description: String
+  exchange: String
+  expiry: String
+  maxOrder: String
+  minOrder: String
+  name: String
+  sellPair: String
+  stake: String
+  stakeAmount: Float
+  stakes: StakeCreateNestedManyWithoutBlueprintsInput
+  stopLoss: String
+  successRate: Float
+  takeProfit: String
+  tradeType: String
+  transactions: TransactionCreateNestedManyWithoutBlueprintsInput
+  user: UserWhereUniqueInput
+}
+
+input BlueprintCreateNestedManyWithoutUsersInput {
+  connect: [BlueprintWhereUniqueInput!]
+}
+
+input BlueprintListRelationFilter {
+  every: BlueprintWhereInput
+  none: BlueprintWhereInput
+  some: BlueprintWhereInput
+}
+
+input BlueprintOrderByInput {
+  aiData: SortOrder
+  buyPair: SortOrder
+  createdAt: SortOrder
+  description: SortOrder
+  exchange: SortOrder
+  expiry: SortOrder
+  id: SortOrder
+  maxOrder: SortOrder
+  minOrder: SortOrder
+  name: SortOrder
+  sellPair: SortOrder
+  stake: SortOrder
+  stakeAmount: SortOrder
+  stopLoss: SortOrder
+  successRate: SortOrder
+  takeProfit: SortOrder
+  tradeType: SortOrder
+  updatedAt: SortOrder
+  userId: SortOrder
+}
+
+input BlueprintUpdateInput {
+  aiData: JSON
+  buyPair: String
+  description: String
+  exchange: String
+  expiry: String
+  maxOrder: String
+  minOrder: String
+  name: String
+  sellPair: String
+  stake: String
+  stakeAmount: Float
+  stakes: StakeUpdateManyWithoutBlueprintsInput
+  stopLoss: String
+  successRate: Float
+  takeProfit: String
+  tradeType: String
+  transactions: TransactionUpdateManyWithoutBlueprintsInput
+  user: UserWhereUniqueInput
+}
+
+input BlueprintUpdateManyWithoutUsersInput {
+  connect: [BlueprintWhereUniqueInput!]
+  disconnect: [BlueprintWhereUniqueInput!]
+  set: [BlueprintWhereUniqueInput!]
+}
+
+input BlueprintWhereInput {
+  aiData: JsonFilter
+  buyPair: StringNullableFilter
+  description: StringNullableFilter
+  exchange: StringNullableFilter
+  expiry: StringNullableFilter
+  id: StringFilter
+  maxOrder: StringNullableFilter
+  minOrder: StringNullableFilter
+  name: StringNullableFilter
+  sellPair: StringNullableFilter
+  stake: StringNullableFilter
+  stakeAmount: FloatNullableFilter
+  stakes: StakeListRelationFilter
+  stopLoss: StringNullableFilter
+  successRate: FloatNullableFilter
+  takeProfit: StringNullableFilter
+  tradeType: StringNullableFilter
+  transactions: TransactionListRelationFilter
+  user: UserWhereUniqueInput
+}
+
+input BlueprintWhereUniqueInput {
+  id: String!
+}
+
+input BooleanNullableFilter {
+  equals: Boolean
+  not: Boolean
+}
+
+input Credentials {
+  password: String!
+  username: String!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+input DateTimeNullableFilter {
+  equals: DateTime
+  gt: DateTime
+  gte: DateTime
+  in: [DateTime!]
+  lt: DateTime
+  lte: DateTime
+  not: DateTime
+  notIn: [DateTime!]
+}
+
+enum EnumAdminPrivileges {
+  Option_1
+}
+
+enum EnumAppUserRole {
+  Option_1
+}
+
+enum EnumStakeStatus {
+  Option_1
+}
+
+enum EnumTransactionStatus {
+  Option_1
+}
+
+enum EnumTransactionTypeField {
+  Option_1
+}
+
+input FloatNullableFilter {
+  equals: Float
+  gt: Float
+  gte: Float
+  in: [Float!]
+  lt: Float
+  lte: Float
+  not: Float
+  notIn: [Float!]
+}
+
+input IntNullableFilter {
+  equals: Int
+  gt: Int
+  gte: Int
+  in: [Int!]
+  lt: Int
+  lte: Int
+  not: Int
+  notIn: [Int!]
+}
+
+"""
+The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
+"""
+scalar JSON
+
+"""
+The `JSONObject` scalar type represents JSON objects as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
+"""
+scalar JSONObject
+
+input JsonFilter {
+  equals: JSONObject
+  not: JSONObject
+}
+
+type Leaderboard {
+  createdAt: DateTime!
+  id: String!
+  points: Float
+  rankPosition: Float
+  updatedAt: DateTime!
+  user: User
+}
+
+input LeaderboardCreateInput {
+  points: Float
+  rankPosition: Float
+  user: UserWhereUniqueInput
+}
+
+input LeaderboardCreateNestedManyWithoutUsersInput {
+  connect: [LeaderboardWhereUniqueInput!]
+}
+
+input LeaderboardListRelationFilter {
+  every: LeaderboardWhereInput
+  none: LeaderboardWhereInput
+  some: LeaderboardWhereInput
+}
+
+input LeaderboardOrderByInput {
+  createdAt: SortOrder
+  id: SortOrder
+  points: SortOrder
+  rankPosition: SortOrder
+  updatedAt: SortOrder
+  userId: SortOrder
+}
+
+input LeaderboardUpdateInput {
+  points: Float
+  rankPosition: Float
+  user: UserWhereUniqueInput
+}
+
+input LeaderboardUpdateManyWithoutUsersInput {
+  connect: [LeaderboardWhereUniqueInput!]
+  disconnect: [LeaderboardWhereUniqueInput!]
+  set: [LeaderboardWhereUniqueInput!]
+}
+
+input LeaderboardWhereInput {
+  id: StringFilter
+  points: IntNullableFilter
+  rankPosition: IntNullableFilter
+  user: UserWhereUniqueInput
+}
+
+input LeaderboardWhereUniqueInput {
+  id: String!
+}
+
+type MetaQueryPayload {
+  count: Float!
+}
+
+type Mutation {
+  createAdmin(data: AdminCreateInput!): Admin!
+  createAppUser(data: AppUserCreateInput!): AppUser!
+  createBlueprint(data: BlueprintCreateInput!): Blueprint!
+  createLeaderboard(data: LeaderboardCreateInput!): Leaderboard!
+  createNotification(data: NotificationCreateInput!): Notification!
+  createStake(data: StakeCreateInput!): Stake!
+  createTransaction(data: TransactionCreateInput!): Transaction!
+  createUser(data: UserCreateInput!): User!
+  deleteAdmin(where: AdminWhereUniqueInput!): Admin!
+  deleteAppUser(where: AppUserWhereUniqueInput!): AppUser!
+  deleteBlueprint(where: BlueprintWhereUniqueInput!): Blueprint!
+  deleteLeaderboard(where: LeaderboardWhereUniqueInput!): Leaderboard!
+  deleteNotification(where: NotificationWhereUniqueInput!): Notification!
+  deleteStake(where: StakeWhereUniqueInput!): Stake!
+  deleteTransaction(where: TransactionWhereUniqueInput!): Transaction!
+  deleteUser(where: UserWhereUniqueInput!): User!
+  login(credentials: Credentials!): UserInfo!
+  updateAdmin(data: AdminUpdateInput!, where: AdminWhereUniqueInput!): Admin!
+  updateAppUser(data: AppUserUpdateInput!, where: AppUserWhereUniqueInput!): AppUser!
+  updateBlueprint(data: BlueprintUpdateInput!, where: BlueprintWhereUniqueInput!): Blueprint!
+  updateLeaderboard(data: LeaderboardUpdateInput!, where: LeaderboardWhereUniqueInput!): Leaderboard!
+  updateNotification(data: NotificationUpdateInput!, where: NotificationWhereUniqueInput!): Notification!
+  updateStake(data: StakeUpdateInput!, where: StakeWhereUniqueInput!): Stake!
+  updateTransaction(data: TransactionUpdateInput!, where: TransactionWhereUniqueInput!): Transaction!
+  updateUser(data: UserUpdateInput!, where: UserWhereUniqueInput!): User!
+}
+
+type Notification {
+  createdAt: DateTime!
+  id: String!
+  message: String
+  read: Boolean
+  updatedAt: DateTime!
+  user: User
+}
+
+input NotificationCreateInput {
+  message: String
+  read: Boolean
+  user: UserWhereUniqueInput
+}
+
+input NotificationCreateNestedManyWithoutUsersInput {
+  connect: [NotificationWhereUniqueInput!]
+}
+
+input NotificationListRelationFilter {
+  every: NotificationWhereInput
+  none: NotificationWhereInput
+  some: NotificationWhereInput
+}
+
+input NotificationOrderByInput {
+  createdAt: SortOrder
+  id: SortOrder
+  message: SortOrder
+  read: SortOrder
+  updatedAt: SortOrder
+  userId: SortOrder
+}
+
+input NotificationUpdateInput {
+  message: String
+  read: Boolean
+  user: UserWhereUniqueInput
+}
+
+input NotificationUpdateManyWithoutUsersInput {
+  connect: [NotificationWhereUniqueInput!]
+  disconnect: [NotificationWhereUniqueInput!]
+  set: [NotificationWhereUniqueInput!]
+}
+
+input NotificationWhereInput {
+  id: StringFilter
+  message: StringNullableFilter
+  read: BooleanNullableFilter
+  user: UserWhereUniqueInput
+}
+
+input NotificationWhereUniqueInput {
+  id: String!
+}
+
+type Query {
+  _adminsMeta(where: AdminWhereInput): MetaQueryPayload!
+  _appUsersMeta(where: AppUserWhereInput): MetaQueryPayload!
+  _blueprintsMeta(where: BlueprintWhereInput): MetaQueryPayload!
+  _leaderboardsMeta(where: LeaderboardWhereInput): MetaQueryPayload!
+  _notificationsMeta(where: NotificationWhereInput): MetaQueryPayload!
+  _stakesMeta(where: StakeWhereInput): MetaQueryPayload!
+  _transactionsMeta(where: TransactionWhereInput): MetaQueryPayload!
+  _usersMeta(where: UserWhereInput): MetaQueryPayload!
+  admin(where: AdminWhereUniqueInput!): Admin
+  admins(orderBy: [AdminOrderByInput!], skip: Float, take: Float, where: AdminWhereInput): [Admin!]!
+  appUser(where: AppUserWhereUniqueInput!): AppUser
+  appUsers(orderBy: [AppUserOrderByInput!], skip: Float, take: Float, where: AppUserWhereInput): [AppUser!]!
+  blueprint(where: BlueprintWhereUniqueInput!): Blueprint
+  blueprints(orderBy: [BlueprintOrderByInput!], skip: Float, take: Float, where: BlueprintWhereInput): [Blueprint!]!
+  leaderboard(where: LeaderboardWhereUniqueInput!): Leaderboard
+  leaderboards(orderBy: [LeaderboardOrderByInput!], skip: Float, take: Float, where: LeaderboardWhereInput): [Leaderboard!]!
+  notification(where: NotificationWhereUniqueInput!): Notification
+  notifications(orderBy: [NotificationOrderByInput!], skip: Float, take: Float, where: NotificationWhereInput): [Notification!]!
+  stake(where: StakeWhereUniqueInput!): Stake
+  stakes(orderBy: [StakeOrderByInput!], skip: Float, take: Float, where: StakeWhereInput): [Stake!]!
+  transaction(where: TransactionWhereUniqueInput!): Transaction
+  transactions(orderBy: [TransactionOrderByInput!], skip: Float, take: Float, where: TransactionWhereInput): [Transaction!]!
+  user(where: UserWhereUniqueInput!): User
+  userInfo: UserInfo!
+  users(orderBy: [UserOrderByInput!], skip: Float, take: Float, where: UserWhereInput): [User!]!
+}
+
+enum QueryMode {
+  Default
+  Insensitive
+}
+
+enum SortOrder {
+  Asc
+  Desc
+}
+
+type Stake {
+  amount: Float
+  blueprint: Blueprint
+  createdAt: DateTime!
+  id: String!
+  status: EnumStakeStatus
+  updatedAt: DateTime!
+  user: User
+}
+
+input StakeCreateInput {
+  amount: Float
+  blueprint: BlueprintWhereUniqueInput
+  status: EnumStakeStatus
+  user: UserWhereUniqueInput
+}
+
+input StakeCreateNestedManyWithoutBlueprintsInput {
+  connect: [StakeWhereUniqueInput!]
+}
+
+input StakeCreateNestedManyWithoutUsersInput {
+  connect: [StakeWhereUniqueInput!]
+}
+
+input StakeListRelationFilter {
+  every: StakeWhereInput
+  none: StakeWhereInput
+  some: StakeWhereInput
+}
+
+input StakeOrderByInput {
+  amount: SortOrder
+  blueprintId: SortOrder
+  createdAt: SortOrder
+  id: SortOrder
+  status: SortOrder
+  updatedAt: SortOrder
+  userId: SortOrder
+}
+
+input StakeUpdateInput {
+  amount: Float
+  blueprint: BlueprintWhereUniqueInput
+  status: EnumStakeStatus
+  user: UserWhereUniqueInput
+}
+
+input StakeUpdateManyWithoutBlueprintsInput {
+  connect: [StakeWhereUniqueInput!]
+  disconnect: [StakeWhereUniqueInput!]
+  set: [StakeWhereUniqueInput!]
+}
+
+input StakeUpdateManyWithoutUsersInput {
+  connect: [StakeWhereUniqueInput!]
+  disconnect: [StakeWhereUniqueInput!]
+  set: [StakeWhereUniqueInput!]
+}
+
+input StakeWhereInput {
+  amount: FloatNullableFilter
+  blueprint: BlueprintWhereUniqueInput
+  id: StringFilter
+  status: EnumStakeStatus
+  user: UserWhereUniqueInput
+}
+
+input StakeWhereUniqueInput {
+  id: String!
+}
+
+input StringFilter {
+  contains: String
+  endsWith: String
+  equals: String
+  gt: String
+  gte: String
+  in: [String!]
+  lt: String
+  lte: String
+  mode: QueryMode
+  not: String
+  notIn: [String!]
+  startsWith: String
+}
+
+input StringNullableFilter {
+  contains: String
+  endsWith: String
+  equals: String
+  gt: String
+  gte: String
+  in: [String!]
+  lt: String
+  lte: String
+  mode: QueryMode
+  not: String
+  notIn: [String!]
+  startsWith: String
+}
+
+type Transaction {
+  amount: Float
+  blueprint: Blueprint
+  createdAt: DateTime!
+  id: String!
+  status: EnumTransactionStatus
+  transactionDate: DateTime
+  typeField: EnumTransactionTypeField
+  updatedAt: DateTime!
+  user: User
+}
+
+input TransactionCreateInput {
+  amount: Float
+  blueprint: BlueprintWhereUniqueInput
+  status: EnumTransactionStatus
+  transactionDate: DateTime
+  typeField: EnumTransactionTypeField
+  user: UserWhereUniqueInput
+}
+
+input TransactionCreateNestedManyWithoutBlueprintsInput {
+  connect: [TransactionWhereUniqueInput!]
+}
+
+input TransactionCreateNestedManyWithoutUsersInput {
+  connect: [TransactionWhereUniqueInput!]
+}
+
+input TransactionListRelationFilter {
+  every: TransactionWhereInput
+  none: TransactionWhereInput
+  some: TransactionWhereInput
+}
+
+input TransactionOrderByInput {
+  amount: SortOrder
+  blueprintId: SortOrder
+  createdAt: SortOrder
+  id: SortOrder
+  status: SortOrder
+  transactionDate: SortOrder
+  typeField: SortOrder
+  updatedAt: SortOrder
+  userId: SortOrder
+}
+
+input TransactionUpdateInput {
+  amount: Float
+  blueprint: BlueprintWhereUniqueInput
+  status: EnumTransactionStatus
+  transactionDate: DateTime
+  typeField: EnumTransactionTypeField
+  user: UserWhereUniqueInput
+}
+
+input TransactionUpdateManyWithoutBlueprintsInput {
+  connect: [TransactionWhereUniqueInput!]
+  disconnect: [TransactionWhereUniqueInput!]
+  set: [TransactionWhereUniqueInput!]
+}
+
+input TransactionUpdateManyWithoutUsersInput {
+  connect: [TransactionWhereUniqueInput!]
+  disconnect: [TransactionWhereUniqueInput!]
+  set: [TransactionWhereUniqueInput!]
+}
+
+input TransactionWhereInput {
+  amount: FloatNullableFilter
+  blueprint: BlueprintWhereUniqueInput
+  id: StringFilter
+  status: EnumTransactionStatus
+  transactionDate: DateTimeNullableFilter
+  typeField: EnumTransactionTypeField
+  user: UserWhereUniqueInput
+}
+
+input TransactionWhereUniqueInput {
+  id: String!
+}
+
+type User {
+  admins(orderBy: [AdminOrderByInput!], skip: Float, take: Float, where: AdminWhereInput): [Admin!]!
+  blueprints(orderBy: [BlueprintOrderByInput!], skip: Float, take: Float, where: BlueprintWhereInput): [Blueprint!]!
+  createdAt: DateTime!
+  email: String
+  firstName: String
+  id: String!
+  lastName: String
+  leaderboards(orderBy: [LeaderboardOrderByInput!], skip: Float, take: Float, where: LeaderboardWhereInput): [Leaderboard!]!
+  notifications(orderBy: [NotificationOrderByInput!], skip: Float, take: Float, where: NotificationWhereInput): [Notification!]!
+  rank: Float
+  roles: JSON!
+  stakes(orderBy: [StakeOrderByInput!], skip: Float, take: Float, where: StakeWhereInput): [Stake!]!
+  transactions(orderBy: [TransactionOrderByInput!], skip: Float, take: Float, where: TransactionWhereInput): [Transaction!]!
+  updatedAt: DateTime!
+  username: String!
+  walletAddress: String
+}
+
+input UserCreateInput {
+  admins: AdminCreateNestedManyWithoutUsersInput
+  blueprints: BlueprintCreateNestedManyWithoutUsersInput
+  email: String
+  firstName: String
+  lastName: String
+  leaderboards: LeaderboardCreateNestedManyWithoutUsersInput
+  notifications: NotificationCreateNestedManyWithoutUsersInput
+  password: String!
+  rank: Float
+  roles: JSON!
+  stakes: StakeCreateNestedManyWithoutUsersInput
+  transactions: TransactionCreateNestedManyWithoutUsersInput
+  username: String!
+  walletAddress: String
+}
+
+type UserInfo {
+  accessToken: String
+  id: String!
+  roles: [String!]!
+  username: String!
+}
+
+input UserOrderByInput {
+  createdAt: SortOrder
+  email: SortOrder
+  firstName: SortOrder
+  id: SortOrder
+  lastName: SortOrder
+  password: SortOrder
+  rank: SortOrder
+  roles: SortOrder
+  updatedAt: SortOrder
+  username: SortOrder
+  walletAddress: SortOrder
+}
+
+input UserUpdateInput {
+  admins: AdminUpdateManyWithoutUsersInput
+  blueprints: BlueprintUpdateManyWithoutUsersInput
+  email: String
+  firstName: String
+  lastName: String
+  leaderboards: LeaderboardUpdateManyWithoutUsersInput
+  notifications: NotificationUpdateManyWithoutUsersInput
+  password: String
+  rank: Float
+  roles: JSON
+  stakes: StakeUpdateManyWithoutUsersInput
+  transactions: TransactionUpdateManyWithoutUsersInput
+  username: String
+  walletAddress: String
+}
+
+input UserWhereInput {
+  admins: AdminListRelationFilter
+  blueprints: BlueprintListRelationFilter
+  email: StringNullableFilter
+  firstName: StringNullableFilter
+  id: StringFilter
+  lastName: StringNullableFilter
+  leaderboards: LeaderboardListRelationFilter
+  notifications: NotificationListRelationFilter
+  rank: IntNullableFilter
+  stakes: StakeListRelationFilter
+  transactions: TransactionListRelationFilter
+  username: StringFilter
+  walletAddress: StringNullableFilter
+}
+
+input UserWhereUniqueInput {
+  id: String!
+}

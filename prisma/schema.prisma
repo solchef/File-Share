@@ -1,0 +1,140 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  admins        Admin[]
+  blueprints    Blueprint[]
+  createdAt     DateTime       @default(now())
+  email         String?        @unique
+  firstName     String?
+  id            String         @id @default(cuid())
+  lastName      String?
+  leaderboards  Leaderboard[]
+  notifications Notification[]
+  password      String
+  rank          Int?
+  roles         Json
+  stakes        Stake[]
+  transactions  Transaction[]
+  updatedAt     DateTime       @updatedAt
+  username      String         @unique
+  walletAddress String?
+}
+
+model Leaderboard {
+  createdAt    DateTime @default(now())
+  id           String   @id @default(cuid())
+  points       Int?
+  rankPosition Int?
+  updatedAt    DateTime @updatedAt
+  user         User?    @relation(fields: [userId], references: [id])
+  userId       String?
+}
+
+model Blueprint {
+  aiData       Json?
+  buyPair      String?
+  createdAt    DateTime      @default(now())
+  description  String?
+  exchange     String?
+  expiry       String?
+  id           String        @id @default(cuid())
+  maxOrder     String?
+  minOrder     String?
+  name         String?
+  sellPair     String?
+  stake        String?
+  stakeAmount  Float?
+  stakes       Stake[]
+  stopLoss     String?
+  successRate  Float?
+  takeProfit   String?
+  tradeType    String?
+  transactions Transaction[]
+  updatedAt    DateTime      @updatedAt
+  user         User?         @relation(fields: [userId], references: [id])
+  userId       String?
+}
+
+model Transaction {
+  amount          Float?
+  blueprint       Blueprint?                @relation(fields: [blueprintId], references: [id])
+  blueprintId     String?
+  createdAt       DateTime                  @default(now())
+  id              String                    @id @default(cuid())
+  status          EnumTransactionStatus?
+  transactionDate DateTime?
+  typeField       EnumTransactionTypeField?
+  updatedAt       DateTime                  @updatedAt
+  user            User?                     @relation(fields: [userId], references: [id])
+  userId          String?
+}
+
+model Admin {
+  createdAt  DateTime             @default(now())
+  id         String               @id @default(cuid())
+  privileges EnumAdminPrivileges?
+  updatedAt  DateTime             @updatedAt
+  user       User?                @relation(fields: [userId], references: [id])
+  userId     String?
+}
+
+model Stake {
+  amount      Float?
+  blueprint   Blueprint?       @relation(fields: [blueprintId], references: [id])
+  blueprintId String?
+  createdAt   DateTime         @default(now())
+  id          String           @id @default(cuid())
+  status      EnumStakeStatus?
+  updatedAt   DateTime         @updatedAt
+  user        User?            @relation(fields: [userId], references: [id])
+  userId      String?
+}
+
+model Notification {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  message   String?
+  read      Boolean?
+  updatedAt DateTime @updatedAt
+  user      User?    @relation(fields: [userId], references: [id])
+  userId    String?
+}
+
+model AppUser {
+  createdAt     DateTime         @default(now())
+  email         String?
+  id            String           @id @default(cuid())
+  passwordHash  String?
+  rank          Int?
+  role          EnumAppUserRole?
+  updatedAt     DateTime         @updatedAt
+  username      String?
+  walletAddress String?
+}
+
+enum EnumTransactionStatus {
+  Option1
+}
+
+enum EnumTransactionTypeField {
+  Option1
+}
+
+enum EnumAdminPrivileges {
+  Option1
+}
+
+enum EnumStakeStatus {
+  Option1
+}
+
+enum EnumAppUserRole {
+  Option1
+}

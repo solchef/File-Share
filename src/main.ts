@@ -16,11 +16,17 @@ const { PORT = 3000 } = process.env;
 
 async function main() {
   const app = await NestFactory.create(AppModule, {
-    cors: true,
-    bufferLogs: true
+    bufferLogs: true,
   });
 
   app.useLogger(app.get(Logger));
+
+  // Configure CORS with specific allowed origins
+  app.enableCors({
+    origin: ['https://hedgeboard.hostnations.pro'], // Allowed origins
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS', // Allowed methods
+    credentials: true, // Allow cookies or authentication headers
+  });
 
   app.setGlobalPrefix("api");
   app.useGlobalPipes(
@@ -32,7 +38,7 @@ async function main() {
 
   const document = SwaggerModule.createDocument(app, swaggerDocumentOptions);
 
-  /** check if there is Public decorator for each path (action) and its method (findMany / findOne) on each controller */
+  // Check if there is Public decorator for each path and method
   Object.values((document as OpenAPIObject).paths).forEach((path: any) => {
     Object.values(path).forEach((method: any) => {
       if (
